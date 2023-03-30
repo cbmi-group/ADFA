@@ -16,7 +16,7 @@ device = torch.device('cuda' if use_cuda else 'cpu')
 CLASS_NAMES = ['brainMRI','covid19','BUSI','cervical']
 
 def parse_args():
-    parser = argparse.ArgumentParser('CFA configuration')
+    parser = argparse.ArgumentParser('ADFA configuration')
     parser.add_argument('--data_path', type=str, default='./dataset')
     parser.add_argument('--size', type=int, choices=[224, 256], default=224)
     parser.add_argument('--gamma_d', type=int, default=4)
